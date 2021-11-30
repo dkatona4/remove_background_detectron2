@@ -9,7 +9,7 @@ This tiny script let you to remove background around the object.
 	 +	Creates two files:
 		 +	Masked image (the background color depends on definition)
 		 +	Cropped image 
-	+  Take only 1 object from each photos. The largest pixel area will be taken.
+	+  Take only one object from each photos. The largest pixel area will be taken.
 	+  Faster masking. The script uses matrix operations, which makes the code quite fast.
 
 
