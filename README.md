@@ -2,9 +2,9 @@
 This tiny script let you to remove background around the object.
 
 ### Jupyter notebooks:
- - [bg-remove-original.ipynb](https://github.com/dkatona4/remove_background_detectron2/blob/main/bg-remove-original.ipynb)
+ - [bg-remove-original.ipynb](https://github.com/dkatona4/remove_background_detectron2/blob/main/jupyter_notebooks/bg-remove-original.ipynb)
 	+ This scipt made by [DDemmer1](https://github.com/DDemmer1/ai-background-remove "View codes by DDemmer1")
- - [bg_remove-fast-latest.ipynb](https://github.com/dkatona4/remove_background_detectron2/blob/main/bg_remove-fast-latest.ipynb "bg_remove-fast-latest.ipynb")
+ - [bg_remove-fast-latest.ipynb](https://github.com/dkatona4/remove_background_detectron2/blob/main/jupyter_notebooks/bg_remove-fast-latest.ipynb)
 	 +	Automatically creates folder structure if it necessary
 	 +	Creates two files:
 		 +	Masked image (the background color depends on definition)
@@ -24,7 +24,6 @@ This tiny script let you to remove background around the object.
 2. Run the following network: 
 (If you use a Python version **other than 3.7**. Make sure to change the version in the path )
 
-
 ```
 python detectron2/demo.py --config-file detectron2/lib/python3.7/site-packages/detectron2/model_zoo/configs/COCO-PanopticSegmentation/panoptic_fpn_R_101_3x.yaml --input input/* --output output  --opts MODEL.DEVICE cpu MODEL.WEIGHTS detectron2://COCO-PanopticSegmentation/panoptic_fpn_R_101_3x/139514519/model_final_cafdb1.pkl
 ```
@@ -33,4 +32,11 @@ python detectron2/demo.py --config-file detectron2/lib/python3.7/site-packages/d
 
 ### How to run:
 
-1. Modify the parameters in [bg_remove-fast-latest.ipynb](https://github.com/dkatona4/remove_background_detectron2/blob/main/bg_remove-fast-latest.ipynb "bg_remove-fast-latest.ipynb")
+1. Copy the previously generated ".pkl" filepath and paste it into a new text file. This file can contain multiple ".pkl" filepathes. 
+
+2. Modify the parameters in [bg_remove-fast-latest.ipynb](https://github.com/dkatona4/remove_background_detectron2/blob/main/bg_remove_fast.py "bg_remove-fast-latest.py")
+  + ```base_crop_path```
+  + ```base_black_path```
+  + ```fileopen()``` method
+     - First argument (".txt" filepath): "/home/wildhorse_project/detectron_pic/pkl_lists/szazxszep.txt"
+     - Second argument (horse name): e.g: szarxszep
