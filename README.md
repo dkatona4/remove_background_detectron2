@@ -32,11 +32,11 @@ python detectron2/demo.py --config-file detectron2/lib/python3.7/site-packages/d
 
 ### How to run:
 
-1. Copy the previously generated ".pkl" filepath and paste it into a new text file. This file can contain multiple ".pkl" filepathes. 
+1. Copy the previously generated ".pkl" filepath(es) and paste it into a new text file. This file can contain multiple ".pkl" filepathes. Each filepath must be written to a new row.
 
 2. Modify the parameters in [bg_remove-fast-latest.ipynb](https://github.com/dkatona4/remove_background_detectron2/blob/main/bg_remove_fast.py "bg_remove-fast-latest.py")
   + ```base_crop_path```
   + ```base_black_path```
   + ```fileopen()``` method
-     - First argument (".txt" filepath): "/home/wildhorse_project/detectron_pic/pkl_lists/szazxszep.txt"
-     - Second argument (horse name): e.g: szarxszep
+     - First argument (".txt" filepath): e.g: "/home/wildhorse_project/detectron_pic/pkl_lists/szazxszep.txt"
+     - Second argument (horse name): e.g: szazxszep
