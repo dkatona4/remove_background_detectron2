@@ -3,7 +3,7 @@ This tiny script let you to remove background around the object.
 
 ### Jupyter notebooks:
  - [bg-remove-original.ipynb](https://github.com/dkatona4/remove_background_detectron2/blob/main/bg-remove-original.ipynb)
-	+ This scipt made by [DDemmer1](https://github.com/DDemmer1/ai-background-remove/commits?author=DDemmer1 "View all commits by DDemmer1")
+	+ This scipt made by [DDemmer1](https://github.com/DDemmer1/ai-background-remove "View codes by DDemmer1")
  - [bg_remove-fast-latest.ipynb](https://github.com/dkatona4/remove_background_detectron2/blob/main/bg_remove-fast-latest.ipynb "bg_remove-fast-latest.ipynb")
 	 +	Automatically creates folder structure if it necessary
 	 +	Creates two files:
@@ -14,5 +14,5 @@ This tiny script let you to remove background around the object.
 
 
 ### How to use:
- - First you need to run the detectron2 algorihm
+ - First you need to install [ai-background-remove](https://github.com/DDemmer1/ai-background-remove) [written by DDemmer1]
  - 
